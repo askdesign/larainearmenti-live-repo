@@ -125,33 +125,3 @@ a.post-more-link {
     text-align: center;
     }
 }
-
-
-
-/* --- STYLESHEET ONLY --- */
-
-/* --- home features --- */
-.home .single-content h4 {
-	font-size: 1rem;
-	margin-bottom: 20px;
-}
-
-/* --- blog --- */
-#archive-container.grid-cols {
-    row-gap: 5rem;
-}
-
-:where(.wp-block-columns.is-layout-flex) {
-    gap: 1rem;
-}
-
-/* --- galleries --- */
-
-a.desc-more {
-	color:#b27aff;
-}
-
-/* --- lists --- */
-.list-xtra-space ul > li {
-	margin-bottom: 26px;
-}
