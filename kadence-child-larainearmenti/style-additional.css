@@ -15,7 +15,6 @@ Text Domain: kadence-child-larainearmenti
 -------------------------------------------------------------- */
 
 /* --- Additional CSS --- */
-
 /* --- header --- */
 .site-branding .site-description {
     letter-spacing: 0;
@@ -23,14 +22,21 @@ Text Domain: kadence-child-larainearmenti
 
 /* --- footer --- */
 .site-bottom-footer-wrap .site-footer-row-container-inner {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    color: var(--global-palette7);
+	font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--global-palette7);
 }
 
 #colophon .site-footer-row-container .site-footer-row .footer-html a {
     color: #888;
+}
+
+/* -- body text -- */
+.single-content p
+ {
+    margin-top: 0;
+    margin-bottom: var(--global-sm-spacing) !important;
 }
 
 /* --- pages --- */
@@ -39,7 +45,7 @@ Text Domain: kadence-child-larainearmenti
 
 /* --- page titles --- */
 .page-title, .single-content h1 {
-    margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
 	padding-bottom: 1.25rem;
 	border-bottom: 1px solid #c5c5c5;
 	text-align: left;
@@ -67,15 +73,21 @@ a.post-more-link {
 
 .entry-meta {
     font-size: .75rem;
-    text-transform: uppercase;
-  }
-  
-  .entry-taxonomies {
-     font-size: .625rem;
-  }
-  
+	text-transform: uppercase;
+}
+
+.entry-taxonomies {
+   font-size: .625rem;
+   display: none;
+}
+
+
+.post-navigation a { display: none; }
+
 
 /* --- galleries --- */
+
+
 
 /* --- gallery no sections --- */
 .kb-gallery-type-grid.kb-gallery-id-4407_0e2de3-47 .kadence-blocks-gallery-item,
@@ -112,6 +124,22 @@ a.post-more-link {
     padding-bottom: 55px;
 }
 
+/* -- lighbox -- */
+
+.glightbox-kadence-dark {
+    --glightbox-main-overlay: #fff;
+    --glightbox-nav-color: #fff;
+    --glightbox-nav-bg-color: rgba(0, 0, 0, 0.75);
+    --glightbox-nav-bg-hover-color: rgba(0, 0, 0, 0.85);
+    --glightbox-text-color: #000;
+    --glightbox-image-shadow: 0;
+}
+
+.glightbox-container .gslide-desc
+ {
+    font-size: 1em;
+}
+
 /* --- Mobile Nav --- */
 .popup-drawer .drawer-content.content-align-center {
     text-align: left;
@@ -124,4 +152,26 @@ a.post-more-link {
     padding: 14px 0px;
     text-align: center;
     }
+}
+
+
+/* --- STYLESHEET ONLY --- */
+
+/* --- home features --- */
+.home .single-content h4 {
+
+}
+
+/* --- blog --- */
+#archive-container.grid-cols {
+
+}
+
+:where(.wp-block-columns.is-layout-flex) {
+
+}
+
+/* --- lists --- */
+.list-xtra-space ul > li {
+
 }
